@@ -1,0 +1,20 @@
+/* FeaturedJobs.css */
+.transition-transform {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.transform.translate-y-4 {
+    transform: translateY(1rem); /* Adjust as needed */
+}
+
+.transform.translate-y-0 {
+    transform: translateY(0);
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
