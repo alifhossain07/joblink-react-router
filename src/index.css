@@ -2,8 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    width:90%;
-    padding-top: 10px;
-    margin : 0 auto;
-}
