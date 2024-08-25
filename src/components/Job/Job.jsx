@@ -1,9 +1,10 @@
 import { IoLocationOutline } from "react-icons/io5";
-import { CiDollar } from "react-icons/ci";;
+import { CiDollar } from "react-icons/ci";import { Link } from "react-router-dom";
+;
 
 const Job = ({job}) => {
 
-    const{logo,job_title,company_name,location,salary,remote_or_onsite,job_type}=job;
+    const{id,logo,job_title,company_name,location,salary,remote_or_onsite,job_type}=job;
 
     return (
         <div className="card mx-auto card-compact bg-gray-200 p-6 w-11/12 shadow-2xl mb-10">
@@ -31,7 +32,8 @@ const Job = ({job}) => {
                 </div>
                 
                 <div className="card-actions ">
-                <button className=" px-7 py-3 bg-sky-400 hover:bg-sky-300 duration-200 rounded-3xl text-white font-bold ">View Details</button>
+                <Link to={`/job/${id}`}> <button className=" px-7 py-3 bg-sky-400 hover:bg-sky-300 duration-200 rounded-3xl text-white font-bold ">View Details</button></Link>
+               
                 </div>
             </div>
             </div>
