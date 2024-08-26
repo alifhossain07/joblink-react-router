@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <div className="flex items-center mb-36 justify-center w-10/12 mx-auto mt-24">
+        <div className="flex flex-col md:flex-row items-center mb-36 justify-center w-10/12 mx-auto md:mt-24 mt-16">
 
         {/* Banner Content */}
             <div className=" space-y-8">
@@ -10,8 +10,8 @@ const Banner = () => {
             </div>
 
         {/* Image */}
-            <div>
-                <img className="" src="/src/assets/images/user.png" alt="" />
+            <div className="mt-20 md:mt-0 ">
+                <img className="" src="/assets/images/user.png" alt="" />
             </div>
         </div>
     );

@@ -38,7 +38,7 @@ const Header = () => {
                                     {links}
                                 </ul>
                             </div>
-                        <a className="font-bold text-4xl text-sky-600">JobLink</a>
+                        <a className="font-bold  text-2xl md:text-4xl text-sky-600">JobLink</a>
                     </div>
                     
                     <div className="navbar-center hidden lg:flex">
@@ -47,7 +47,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                    <a ><button className=" px-6 py-4 rounded-full hover:bg-sky-300 duration-200 bg-sky-500 text-white">Start Applying</button></a>
+                    <a ><button className=" md:px-6 md:py-4 rounded-full px-3 py-2 hover:bg-sky-300 duration-200 bg-sky-500 text-white">Start Applying</button></a>
                     </div>
                     </div>
         </div>

@@ -19,7 +19,7 @@ const CategoryList = () => {
           <h1 className="text-3xl text-center mb-4  text-sky-700 font-bold">Job Category List</h1>
           <p className="text-center w-10/12 mx-auto text-base ">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
 
-          <div className="flex justify-around mt-20">
+          <div className="flex flex-col md:flex-row gap-5 w-9/12 mx-auto md:w-full justify-around mt-20">
 
           {
                 jobData.map((jobData, index) => (

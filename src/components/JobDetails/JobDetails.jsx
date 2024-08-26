@@ -28,10 +28,10 @@ const JobDetails = ({onJobApplied}) => {
 
     
     return (
-        <div className='mt-20'>
+        <div className='mt-32'>
             <h2 className='text-center text-2xl font-bold text-sky-700'>{job.job_title} at {job.company_name} </h2>
             <div className='mt-20 grid gap-10 md:grid-cols-5'>
-                <div className='p-4  md:col-span-3'>
+                <div className='p-8   md:col-span-3'>
 
                     <div className='mb-5'>
                     <h1 className='text-2xl font-semibold text-sky-600'>Job Description</h1>
@@ -58,7 +58,7 @@ const JobDetails = ({onJobApplied}) => {
                 
 
                 </div>
-                <div className=' md:col-span-2 w-full p-4 '>
+                <div className=' md:col-span-2 w-full p-8 '>
                 
                 <div>
                      <h1 className='text-2xl font-semibold border-b-4 border-blue-500 mb-4 text-sky-600 pb-4'>Job Details</h1>

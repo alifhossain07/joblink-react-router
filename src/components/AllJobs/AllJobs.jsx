@@ -5,8 +5,7 @@ import Job from '../Job/Job';
 const AllJobs = () => {
 
     const[jobs,setJobs]= useState([]);
-    const[dataLength,setDataLength] = useState([4]);
-    const [showAll, setShowAll] = useState(false);
+ 
     
     useEffect(() => {
         fetch('jobs.json')
@@ -20,7 +19,7 @@ const AllJobs = () => {
     return (
         <div className='mt-10 ' >
            
-            <div className='grid mt-20 grid-cols-2 gap-4'>
+            <div className='md:grid mt-20 md:grid-cols-2 gap-4'>
             {
                 jobs.map(job => <Job key={job.id} job={job}></Job> )
             }
