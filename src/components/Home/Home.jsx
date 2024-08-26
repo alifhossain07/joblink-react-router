@@ -4,6 +4,8 @@ import CategoryList from '../CategoryList/CategoryList';
 import Featuredjobs from '../FeaturedJobs/Featuredjobs';
 
 const Home = () => {
+    
+    
     return (
         <div>
         <Banner></Banner>
