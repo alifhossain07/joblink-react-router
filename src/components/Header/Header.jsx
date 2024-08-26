@@ -8,8 +8,7 @@ const Header = () => {
     <li className="text-base mr-4"><NavLink  to="/" >Home</NavLink></li>
     <li className="text-base mr-4"><NavLink to="/jobs" >Jobs</NavLink></li> 
     <li className="text-base mr-4"><NavLink to="/applied">Applied Jobs</NavLink></li>
-    <li className="text-base mr-4"><NavLink to="/statistics">Statistics</NavLink></li>
-    <li className="text-base mr-4"><NavLink to="/blogs">Blogs</NavLink></li>
+
 
     </>
 

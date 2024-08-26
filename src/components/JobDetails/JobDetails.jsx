@@ -5,8 +5,11 @@ import { PiSubtitlesBold } from "react-icons/pi";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from '../../utility/localstorage';
 
-const JobDetails = () => {
+const JobDetails = ({onJobApplied}) => {
 
     const jobs = useLoaderData();
     const{id,} = useParams();
@@ -14,6 +17,14 @@ const JobDetails = () => {
     const idInt = parseInt(id);
     const job = jobs.find(job => job.id === idInt);
     console.log(job);
+
+    const handleApplyJob =()=>{
+
+            saveJobApplication(idInt);
+            toast('You have successfully Applied into this job')
+            
+
+    };
 
     
     return (
@@ -66,14 +77,12 @@ const JobDetails = () => {
 
                         <h1 className='flex items-center gap-2'><FaLocationDot className=' text-sky-500' />Address: {job.contact_information.address}</h1>
                     </div>
-                    <button className='btn btn-info mt-7 w-full text-white'>Apply Now</button>
+                    <button onClick={handleApplyJob} className='btn btn-info mt-7 w-full text-white'>Apply Now</button>
                 </div>
-                
-
-
 
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
