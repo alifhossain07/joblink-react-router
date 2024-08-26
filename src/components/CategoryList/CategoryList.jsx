@@ -14,12 +14,12 @@ const CategoryList = () => {
     },[]);
 
     return (
-        <div className="space-y-14">
+        <div className="">
           
-          <h1 className="text-4xl text-center mb-4  text-sky-700 font-bold">Job Category List</h1>
-          <p className="text-center w-10/12 mx-auto text-lg ">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
+          <h1 className="text-3xl text-center mb-4  text-sky-700 font-bold">Job Category List</h1>
+          <p className="text-center w-10/12 mx-auto text-base ">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
 
-          <div className="flex justify-around mt-10">
+          <div className="flex justify-around mt-20">
 
           {
                 jobData.map((jobData, index) => (

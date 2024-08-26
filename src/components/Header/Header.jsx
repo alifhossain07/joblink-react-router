@@ -5,11 +5,11 @@ const Header = () => {
 
     const links = 
     <>
-    <li className="text-xl mr-4"><NavLink  to="/" >Home</NavLink></li>
-    <li className="text-xl mr-4"><NavLink to="/jobs" >Jobs</NavLink></li> 
-    <li className="text-xl mr-4"><NavLink to="/applied">Applied Jobs</NavLink></li>
-    <li className="text-xl mr-4"><NavLink to="/statistics">Statistics</NavLink></li>
-    <li className="text-xl mr-4"><NavLink to="/blogs">Blogs</NavLink></li>
+    <li className="text-base mr-4"><NavLink  to="/" >Home</NavLink></li>
+    <li className="text-base mr-4"><NavLink to="/jobs" >Jobs</NavLink></li> 
+    <li className="text-base mr-4"><NavLink to="/applied">Applied Jobs</NavLink></li>
+    <li className="text-base mr-4"><NavLink to="/statistics">Statistics</NavLink></li>
+    <li className="text-base mr-4"><NavLink to="/blogs">Blogs</NavLink></li>
 
     </>
 
@@ -39,7 +39,7 @@ const Header = () => {
                                     {links}
                                 </ul>
                             </div>
-                        <a className="font-bold text-3xl text-sky-600">JobLink</a>
+                        <a className="font-bold text-4xl text-sky-600">JobLink</a>
                     </div>
                     
                     <div className="navbar-center hidden lg:flex">

@@ -7,7 +7,7 @@ const Job = ({job}) => {
     const{id,logo,job_title,company_name,location,salary,remote_or_onsite,job_type}=job;
 
     return (
-        <div className="card mx-auto card-compact bg-gray-200 p-6 w-11/12 shadow-2xl mb-10">
+        <div className="card mx-auto card-compact bg-gray-200 p-6 w-9/12 shadow-2xl mb-10">
 
            <div className="px-5 py-2 ">
            <img className="w-24 h-8 flex flex-grow"
@@ -17,16 +17,16 @@ const Job = ({job}) => {
 
             <div className="card-body">
 
-                <h2 className="mb-3 text-2xl font-bold mt-4">{job_title}</h2>
+                <h2 className="mb-3 text-xl font-bold mt-4">{job_title}</h2>
 
-                <h4 className="mb-3 text-gray-400 font-semibold text-2xl ">{company_name}</h4>
+                <h4 className="mb-3 text-gray-400 font-semibold text-xl ">{company_name}</h4>
 
-                <div className="flex gap-6 text-xl mb-5 mt-3 text-purple-500 font-semibold">
-                    <h1 className="border-4 border-blue-500 px-5 py-2">{remote_or_onsite}</h1>
-                    <h1 className="border-4 border-blue-500 px-5 py-2">{job_type}</h1>
+                <div className="flex gap-6 text-lg mb-5 mt-3 text-purple-500 font-semibold">
+                    <h1 className="border-4 border-blue-500 px-4 py-1">{remote_or_onsite}</h1>
+                    <h1 className="border-4 border-blue-500 px-4 py-1">{job_type}</h1>
                 </div>
 
-                <div className="flex mb-4 flex-grow text-lg gap-2 font-semibold text-gray-400">
+                <div className="flex mb-4 flex-grow text-base gap-2 font-semibold text-gray-400">
                     <p className=" flex items-center gap-2"><IoLocationOutline /> {location}</p>
                     <p className="flex items-center gap-2"><CiDollar />  {salary}</p>
                 </div>
